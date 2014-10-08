@@ -2,22 +2,48 @@ html,
 body {
 	margin: 0;
 	padding: 0;
+	height: 100%; 
 }
 
 body {
 	font: 14px "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.4em;
-	background: #eeeeee;
+	
 	color: #333333;
+	/*
+	background: #eeeeee;
 	width: 520px;
 	margin: 0 auto;
+	*/
 	-webkit-font-smoothing: antialiased;
 }
 
+#lNick {
+	
+	color: #ff1030;
+	font-size: 1em; 
+	
+}
+
+#addr {
+	display: block; 
+}
+
+#new-addr {
+	margin-bottom: 10px; 
+}
+
+
 #todoapp {
+	/*
+	float:left;
+	*/
+	width: 85%; 
 	background: #fff;
-	padding: 20px;
-	margin-bottom: 40px;
+	padding: 1em;
+	margin:1em auto;
+
+	margin-bottom: 1.5em;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
 	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
 	-ms-box-shadow: rgba(0, 0, 0, 0.2) 0 2px 6px 0;
@@ -31,19 +57,23 @@ body {
 }
 
 #todoapp h1 {
-	font-size: 36px;
+	
+	font-size: 1.5em;
+	
 	font-weight: bold;
 	text-align: center;
-	padding: 0 0 10px 0;
+	
 }
 
 #todoapp input[type="text"] {
-	width: 466px;
-	font-size: 24px;
+	width: 99%;
+	font-size: 1em;
 	font-family: inherit;
 	line-height: 1.4em;
+	
 	border: 0;
 	outline: none;
+	margin-top:5px;
 	padding: 6px;
 	border: 1px solid #999999;
 	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0 1px 2px 0 inset;
@@ -70,7 +100,7 @@ body {
 #todo-list li {
 	padding: 18px 20px 18px 0;
 	position: relative;
-	font-size: 24px;
+	font-size: 18px;
 	border-bottom: 1px solid #cccccc;
 }
 
@@ -133,12 +163,14 @@ body {
 
 #todoapp footer {
 	display: none;
+	
 	margin: 0 -20px -20px -20px;
 	overflow: hidden;
 	color: #555555;
 	background: #f4fce8;
 	border-top: 1px solid #ededed;
 	padding: 0 20px;
+
 	line-height: 37px;
 	-webkit-border-radius: 0 0 5px 5px;
 	-moz-border-radius: 0 0 5px 5px;
@@ -189,10 +221,12 @@ body {
 }
 
 #instructions {
-	margin: 10px auto;
+	margin-left: 10%; 
 	color: #777777;
 	text-shadow: rgba(255, 255, 255, 0.8) 0 1px 0;
+	/*
 	text-align: center;
+	*/
 }
 
 #instructions a {
@@ -208,4 +242,51 @@ body {
 
 #credits a {
 	color: #888;
+}
+
+#map-canvas {
+	width: 84%;
+        height: 100%;
+        margin: 10px auto;
+        padding: 10px;
+      }
+
+#panel {
+	    position: absolute;
+        top: 5px;
+        left: 50%;
+        margin-left: -180px;
+        z-index: 5;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #999;
+}
+
+#B {
+  font-size: 2em; 	
+  background: linear-gradient(#93CCF1, #96CEB5);
+  border: 1px solid #999;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #888;
+  margin-left: 25%;
+  margin-right: auto;
+  text-align: center;
+  padding-bottom: 10px; 
+   
+  width: 50%;
+  height: 40px;   
+  display: inline-block;
+  moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  @include border-radius(16px);
+  @include box-shadow(white 0 1px 0 inset, rgba(black, 0.1) 0 1px 0 0);
+  color: #333;
+  cursor: pointer;
+  /*padding: 4px 10px 5px;
+    */
+  &:hover {
+    background: linear-gradient(#fff, #ddd);
+    color: #111;
+  }
+  
 }
