@@ -1,0 +1,4 @@
+MostFrequentWords uses core C/C++ style code
+It also tries to be smart about using A-Z as character index elements into an array - which is not the best idea because of unicode/etc
+
+Better off using getChar type functions
